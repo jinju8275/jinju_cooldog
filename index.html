@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>쿨독 동물병원</title>
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,700&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+	<style type="text/css">
+		
+		*{margin: 0;
+		padding: 0;
+  		font-family: 'Noto Sans KR', sans-serif;}
+
+  		section{margin: 0;
+          padding: 0;
+          width: 100%;}
+
+		.f-bar ul {list-style-type: none;
+  				margin: 0;
+  				padding: 0;
+  				overflow: hidden;
+  				border: 1px solid #e7e7e7;
+  				background-color: white;
+  				text-align: center;}
+
+		.f-bar li a {display: inline-block;
+  				
+  				text-align: center;
+  				padding: 16px 0px 12px 0px;
+          }
+
+  		.f-bar img{width: 8%;}
+
+
+  	.navigation {position: relative; height: 50px; width:100%;}
+
+  	.navigation ul {width:100%; text-align: center;
+                padding-right: 10px;}
+
+  	.navigation ul li {
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 20px;
+    font-weight: bolder; }
+
+  	.navigation ul li a {
+    color: #666;
+    font-weight: normal;
+    text-decoration: none;}
+
+ 	 .navigation .active {position: absolute;
+                      left: 25px;
+                      top: 12px;}
+
+	body {margin: 0;
+		padding: 0;
+   		 width: 100%;}
+
+  	section{margin: 0;
+          	padding: 0;
+    		width: 100%}
+
+    .banner {
+    width: 100%;
+  }
+
+  .banner img {
+    width:100%;
+  }
+
+  .slick-prev {
+    left:50px;
+    z-index: 99;
+  }
+
+  .slick-next {
+    right: 50px;
+  }
+
+  .slick-dots {
+    bottom:30px;
+  }
+
+.slick-dots li button::before {
+  color:white; font-size: 16px;
+}
+.slick-dots li.slick-active button:before {
+  color:white;
+  opacity: 1;
+}
+  	section {
+    width:100%;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  section .banner-wrap {
+    position: relative;
+  }
+  section .item {
+    position: relative;
+  }
+  section .item img {
+    width:100%;
+  }
+  section .item .center-area{
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+
+  section .item .center-area.second-button {
+    top:50%;
+    left:50%;
+  }
+
+  section .item .center-area.second-button a{
+   color: white;
+   text-decoration: none;
+   padding: 20px 0px;
+  }
+
+  section .item .center-area .title {
+    font-size: 3rem;
+    margin-bottom:12px;
+  }
+  section .item .center-area .description {
+    font-size:1.5rem;
+    border:.2px solid white;
+    padding:2px 5px;
+    transition: all .5s ease;
+  }
+  section .item .center-area .description:hover {
+    background-color: white;
+  }
+  section .item .center-area .description:hover a{
+    color: gray;
+  }
+  section .item .center-area .description2{
+    font-size:1.5rem;
+    border:1px solid rgba(255,255,255,.5);
+    padding:2px 5px;
+    transition: all .5 ease;
+  }
+  section .item .center-area .description2:hover {
+    background-color: white;
+
+
+  }
+  section .item .center-area .description2:hover a{
+    color:black;
+  
+  }
+
+    section .item .center-area.third-button {
+    top:85%;
+    left:50%;
+  }
+
+  section .item .center-area.third-button a{
+   color: white;
+   text-decoration: none;
+   padding: 20px 0px;
+  }
+
+
+  section .item .center-area .description3 {
+    font-size:1.5rem;
+    border:.2px solid white;
+    padding:2px 5px;
+    transition: all .5s ease;
+  }
+  section .item .center-area .description3:hover {
+    background-color: white;
+  }
+  section .item .center-area .description3:hover a{
+    color: black;
+  }
+
+
+
+  section .button-wrap {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width:100%;
+  }
+  section .button-wrap .left-arrow {
+    position: absolute;
+    left:50px;
+    top:50%;
+    transform: translateY(-50%);
+  }
+  section .button-wrap .right-arrow {
+    position: absolute;
+    right:50px;
+    top:50%;
+    transform: translateY(-50%);
+    
+  }
+
+  section .item .center-area .description a{ color: white;
+                                              text-decoration: none;}
+
+
+  .s1{width: 100%;
+  		height: 500px;
+  	}
+
+  .item-wrap{width: 1020px;
+             height: 700px;
+             padding-top: 100px;
+             margin: auto;
+             display: flex;
+             }
+
+  .item1{width: 300px;
+        margin: 20px;}
+
+  .item1 a{text-decoration: none;
+          color: black;}
+
+  .item1 img{width: 100%;
+            padding-bottom: 20px;}
+
+
+
+
+	</style>
+
+</head>
+
+<body>
+	<div class="f-bar">
+	<ul>
+  <li>
+    <a href="index.html">
+    <img src="logo.png">
+    </a>
+  </li>
+  </ul>
+</div>
+
+<div class="navigation">
+	<ul>
+ <li>
+    <a class="active" href="index.html">
+    <img src="3bar.png" style="width: 20px;height: 20px">
+  </a>
+</li>
+
+  <li><a href="#news">병원안내</a></li>
+  <li><a href="#news">의료진 소개</a></li>
+  <li><a href="#contact">의료장비 소개</a></li>
+  <li><a href="#about">공지사항</a></li>
+	</ul>
+</div>
+
+
+<section>
+  <div class="banner-wrap">
+
+    <div id="banner">
+
+      <div class="item">
+        <img src="img1.jpg"/>
+        <div class="center-area">
+          <p class="description"><a href="index.html">병원소개</a></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img2.jpg"/>
+        <div class="center-area second-button ">
+          <p class="description2"><a href="index.html">의료진 소개</a></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img3.png"/>
+        <div class="center-area third-button ">
+          <p class="description3"><a href="index.html">펫서비스 </a></p>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="button-wrap">
+      <img class="left-arrow prev" src="left.png">
+      <img class="right-arrow next" src="right.png">
+    </div>  
+
+  </div>
+
+  <section class="s1">
+  	<h1>따뜻한 동네 동물 병원</h1>
+  	<h2>WHY COOLDOG?</h2>
+
+  	 <div class="item-wrap">
+
+      <div class="item1"><img src="img4.jpg">
+                          <div class="item33">실력있는 의료진
+                        </div>
+      </div>
+
+      <div class="item1"><img src="img4.jpg">
+                        <div class="item33">전문 의료 장비
+                          </div>
+      </div>
+
+      <div class="item1"><img src="img4.jpg">
+                        <div class="item33">다양한 진료 케이스</div>
+     </div>
+
+    </div>
+  </section>
+
+
+
+  <footer>
+  	
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#banner").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        dots: true,
+        fade: true,
+        prevArrow: $('img.prev'),
+        nextArrow: $('img.next')
+      });
+    });
+  </script>
+
+
+</body>
+</html>
